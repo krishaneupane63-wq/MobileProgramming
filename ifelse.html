@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive If Else</title>
+</head>
+<body>
+
+    <h2>Check if you are Adult or Not</h2>
+
+    <input type="number" id="ageInput" placeholder="Enter your age">
+    <button onclick="checkAge()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAge() {
+            let age = document.getElementById("ageInput").value;
+
+            if (age >= 18) {
+                document.getElementById("result").innerHTML = "You are an Adult.";
+            }
+            else {
+                document.getElementById("result").innerHTML = "You are Not an Adult yet.";
+            }
+        }
+    </script>
+
+</body>
+</html>
