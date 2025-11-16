@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BikeCare — Home</title>
+  <link rel="stylesheet" href="bikeservices.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <button id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <h1>BikeCare</h1>
+  </header>
+
+  <div id="overlay"></div>
+  
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">Book Service</a></li>
+      <li><a href="#" class="nav-link">Reminders</a></li>
+      <li><a href="#" class="nav-link">History</a></li>
+      <li><a href="#" class="nav-link">Mechanics</a></li>
+      <li><a href="#" class="nav-link">Emergency</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="card hero">
+      <h2>Bike Service Made Easy</h2>
+      <p>Book service, set reminders, and get help anytime.</p>
+      <div class="actions">
+        <button id="bookServiceBtn" class="btn">Book Service</button>
+        <button id="reminderBtn" class="btn outline">Reminders</button>
+      </div>
+    </section>
+
+    <section class="card quick">
+      <h3>Quick Actions</h3>
+      <div class="quick-grid">
+        <button id="emergencyBtn" class="btn danger">Emergency Call</button>
+        <button id="historyBtn" class="btn">Service History</button>
+        <button id="mechanicsBtn" class="btn">Nearby Mechanics</button>
+      </div>
+    </section>
+
+    <section class="card info">
+      <h3>Recent Bookings</h3>
+      <ul id="recentList" class="list">
+        <li>No bookings yet.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="bikeservices.js"></script>
+</body>
+</html>
