@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bike Service — Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Bike Service</h1>
+    <p class="lead">Book a service or ask a question</p>
+
+    <form id="contactForm">
+      <label class="field">Name
+        <input type="text" id="name" required>
+      </label>
+
+      <label class="field">Phone
+        <input type="tel" id="phone" required>
+      </label>
+
+      <label class="field">Email
+        <input type="email" id="email">
+      </label>
+
+      <label class="field">Bike Model
+        <input type="text" id="model">
+      </label>
+
+      <label class="field">Service Type
+        <select id="service">
+          <option>General Service</option>
+          <option>Oil Change</option>
+          <option>Tyre Repair</option>
+          <option>Full Overhaul</option>
+        </select>
+      </label>
+
+      <label class="field">Preferred Date/Time
+        <input type="datetime-local" id="datetime">
+      </label>
+
+      <label class="field">Notes
+        <textarea id="message" rows="4"></textarea>
+      </label>
+
+      <button type="submit" class="btn">Send</button>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <!-- Firebase JS (v8 namespaced SDK for simplicity) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>

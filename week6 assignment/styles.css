@@ -1,0 +1,20 @@
+/* Simple, mobile-first styles for the contact form */
+:root{--accent:#1976d2;--bg:#f7f9fc;--card:#ffffff}
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:#0b2545}
+.container{max-width:480px;margin:28px auto;padding:20px}
+main.container{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(11,37,69,0.06);padding:20px}
+h1{margin:0 0 6px;font-size:1.4rem}
+.lead{margin:0 0 14px;color:#345}
+form{display:flex;flex-direction:column;gap:10px}
+.field{display:flex;flex-direction:column;font-size:.9rem}
+input,textarea,select{padding:10px;border:1px solid #d6dfee;border-radius:8px;font-size:1rem}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(25,118,210,0.08)}
+.btn{background:var(--accent);color:#fff;border:none;padding:12px;border-radius:10px;font-size:1rem;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+.status{margin-top:6px;min-height:1.2em;font-size:.95rem}
+.status.success{color:green}
+.status.error{color:#b00020}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (max-width:420px){.container{margin:12px;padding:14px}input,textarea{font-size:.95rem}}
